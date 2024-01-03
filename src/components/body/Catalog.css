@@ -1,0 +1,147 @@
+.catalog__page-title {
+  margin: 50px 0 24px 30px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.catalog__page {
+  display: grid;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+.catalog__page-empty {
+  margin: 20px 0 0 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.catalog__item-wrapper {
+  width: 276px;
+  height: 387px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #fff;
+  padding: 12px;
+}
+
+.catalog__item-img {
+  border-radius: 12px;
+  width: 276px;
+  height: 220px;
+}
+
+.catalog__item-price {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.catalog__item-name {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 130%;
+}
+.catalog__item-weight {
+  color: #b1b1b1;
+  margin-top: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.catalog__item-btn {
+  margin-top: 8px;
+  font-size: 16px;
+  display: flex;
+  width: 276px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #f2f2f3;
+  transition: box-shadow 0.3s ease, transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.catalog__item-btn:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при нажатии */
+  transform: scale(0.95); /* Уменьшение размера */
+}
+
+.catalog__item-btn:hover {
+  background: #ff7020;
+}
+
+.catalog__item-btn:active {
+  background: #ff7020;
+}
+
+@media (min-width: 1440px) {
+  .catalog__page {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog__page {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .catalog__page {
+    grid-template-columns: 300px 300px;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh;
+    margin: 0;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__page-title {
+    margin: 14px 0;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .catalog__page {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    gap: 10px;
+    height: auto;
+  }
+
+  .catalog__item-wrapper {
+    width: 145px;
+    height: 243px;
+  }
+
+  .catalog__item-img {
+    border-radius: 12px;
+    width: 137px;
+    height: 120px;
+  }
+
+  .catalog__item-price {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .catalog__item-name {
+    margin-top: 4px;
+  }
+  .catalog__item-weight {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .catalog__item-btn {
+    width: 137px;
+    height: 30px;
+  }
+}

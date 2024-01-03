@@ -1,0 +1,150 @@
+.header__wrapper {
+  height: 396px;
+  background: #ffab08;
+  border-radius: 0 0 500px 500px;
+  min-width: 100%;
+}
+
+.container__header {
+  width: 1290px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  padding-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__content {
+  display: flex;
+  justify-content: center;
+}
+
+.header__text {
+  margin: 46px 0 0 21px;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.header__suptitle {
+  color: #ff5c00;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.header__suptext {
+  margin-top: 52px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__price {
+  font-weight: 600;
+}
+
+@media (max-width: 1440px) {
+  .header__wrapper {
+    height: 329px;
+  }
+
+  .container__header {
+    width: auto;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+
+  .header__suptitle {
+    font-size: 36px;
+  }
+
+  .header__suptext {
+    margin-top: 16px;
+  }
+
+  .header__burger {
+    max-width: 227px;
+    max-height: 229px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__wrapper {
+    height: 329px;
+  }
+
+  .container__header {
+    width: 768px;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+
+  .header__suptitle {
+    font-size: 36px;
+  }
+
+  .header__suptext {
+    margin-top: 16px;
+  }
+
+  .header__burger {
+    max-width: 227px;
+    max-height: 229px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__wrapper {
+    height: 460px;
+  }
+
+  .container__header {
+    width: 320px;
+  }
+
+  .header__logo {
+    padding-top: 22px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .header__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__suptitle {
+    font-size: 30px;
+  }
+
+  .header__suptext {
+    margin-top: 16px;
+  }
+
+  .header__burger {
+    margin-top: 18px;
+  }
+}
